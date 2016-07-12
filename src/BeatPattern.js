@@ -1,5 +1,7 @@
 /**
  * Created by dongil on 2016-07-12.
+ * BeatPattern 1.0.5
+ * https://github.com/vulcan9/BeatPattern
  */
 
 
@@ -332,6 +334,4 @@ BeatPattern.prototype = {
 // Export
 ////////////////////////////////////////
 
-module.exports = {
-
-};
+module.exports = BeatPattern;
