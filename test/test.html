@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Beat Pattern Test</title>
+    <meta name="description" content="">
+
+    <script type="text/javascript" src="../src/BeatPattern.js"></script>
+
+</head>
+
+<body style="width: 100%; height: 100%; position: absolute;">
+
+<script>
+    var pattern = new BeatPattern();
+
+    // 이벤트 세팅
+    pattern.createPattern(document.body);
+
+    // 패턴 세팅
+    var patternData = [0, 0, 0, 1, 1, 1];
+//    var patternData = [0, 0, 0, 2, 0, 0, 0, 2];
+//    var patternData = [0, 0];
+    pattern.setPattern(patternData, onSuccess, onFail);
+
+    function onSuccess(){
+        // 패턴 일치
+        console.debug('Success');
+        // 성공 후 더이상 검사를 원하지 않는 경우
+        //pattern.destory();
+    }
+    function onFail(){
+        // 패턴 일치 실패
+        console.debug('Fail');
+    }
+</script>
+</body>
+</html>
