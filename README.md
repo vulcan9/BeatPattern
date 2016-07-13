@@ -43,19 +43,23 @@
 ```
         var pattern = new BeatPattern();
 
-        // 이벤트 세팅
-        pattern.createPattern(document.body);
-
-        // 패턴 세팅
+        // 패턴 데이터
         var patternData = [0, 0, 0, 1, 1, 1];
+
+        // 패턴, 이벤트 세팅
+        pattern.createPattern(document.body);
         pattern.setPattern(patternData, onSuccess, onFail);
 
-        function onSuccess(){}
-        function onFail(){}
+        // 콜백
+        function onSuccess(){console.log('패턴 일치함');}
+        function onFail(){console.log('패턴 실패');}
+
+	......
 
         // 기존 패턴과 이벤트로 다시 검사 초기화
         pattern.resetPattern();
 ```
+
 패턴 데이터를 정의할때는 0,1,2 값으로 표기할 수 있다
  - 0 : 짧게 누르고 있는 상태
  - 1 : 중간 누르고 있는 상태
