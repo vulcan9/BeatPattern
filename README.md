@@ -19,14 +19,14 @@
 # API 목록
 
 #### constant
-	* MIN_SHORT : Number - 짧게 누름 시간 간격 구간 (10~220, 220이하), 10 milisecond
-	* MAX_SHORT : Number - 짧게 누름 시간 간격 구간 (10~220, 220이하), 220 milisecond
-	* MIN_LONG : Number - 보통 누름 시간 간격 구간 (220 ~ 900 이하), 220 milisecond
-	* MAX_LONG : Number - 보통 누름 시간 간격 구간 (220 ~ 900 이하), 900 milisecond
-	* MIN_VARY_LONG : Number - 길게 누름 시간 간격 구간 (900 ~ 2500 이하), 900 milisecond
-	* MAX_VARY_LONG : Number - 길게 누름 시간 간격 구간 (900 ~ 2500 이하), 2500 milisecond
-	* MAX_INTERVAL : Number - 누름 간격 보류 시간 허용치 (시간안에 다음 누름이 인식되어야 함), 2500 milisecond
-	* RETRY_INTERVAL : Number - 패턴 실패시 다음 검사 가능 시점까지 시간 간격, 100 milisecond
+	* MIN_SHORT = 10 : Number - 짧게 누름 시간 간격 구간 (10~220 milisecond)
+	* MAX_SHORT = 220 : Number - 짧게 누름 시간 간격 구간 (10~220 milisecond)
+	* MIN_LONG = 220 : Number - 보통 누름 시간 간격 구간 (220 ~ 900 milisecond)
+	* MAX_LONG = 900 : Number - 보통 누름 시간 간격 구간 (220 ~ 900 milisecond)
+	* MIN_VARY_LONG = 900 : Number - 길게 누름 시간 간격 구간 (900 ~ 2500 milisecond)
+	* MAX_VARY_LONG = 2500 : Number - 길게 누름 시간 간격 구간 (900 ~ 2500 milisecond)
+	* MAX_INTERVAL = 2500 : Number - 누름 간격 보류 시간 허용치 (시간안에 다음 터치(누름)가 인식되어야 함)
+	* RETRY_INTERVAL = 100 : Number - 패턴 실패시 다음 검사 가능 시점까지 시간 간격
 
 #### properties
 	*
